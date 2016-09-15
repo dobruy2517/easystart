@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.citrus.ua/" />
+<title>citrus</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">citrus</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Личный кабинет</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>'tester'+Math.random(3)*100+'@gmai.com'</td>
+	<td>mail</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mobile_phone</td>
+	<td>${mail}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=get_code_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#order_form input[name=&quot;Name&quot;]</td>
+	<td>asdasd</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>document.form1.Gender[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;BirthDate_d&quot;]</td>
+	<td>label=5</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;BirthDate_m&quot;]</td>
+	<td>label=6</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;BirthDate_y&quot;]</td>
+	<td>label=1996</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=Email</td>
+	<td>${mail}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mobile</td>
+	<td>+380505023084</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit_card</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=confirm_cont</td>
+	<td></td>
+</tr>
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td>.citrus.ua</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
